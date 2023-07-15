@@ -1,6 +1,10 @@
-import { ModeToggle } from "@/components/layouts/theme-toggle";
+import Banner from "@/components/Banner";
 import React from "react";
 
 export default function Home() {
-  return <div>Home Page</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
