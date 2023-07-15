@@ -48,6 +48,9 @@ body {
     --destructive-foreground: 0 0% 98%;
     --ring: 240 5% 64.9%;
     --radius: 0.5rem;
+
+    --theme: 264, 57%, 66%, 1;
+    --theme-foreground: 0 0% 98%;
   }
 
   .dark {
@@ -77,6 +80,8 @@ body {
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
+    --theme: 264, 57%, 66%, 1;
+    --theme-foreground: 0 0% 98%;
 
     --ring: 240 3.7% 15.9%;
   }

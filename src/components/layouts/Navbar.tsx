@@ -23,7 +23,7 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="hidden gap-10  lg:flex w-full">
+    <div className="hidden gap-10  lg:flex w-full ">
       <Link
         aria-label="Home"
         href="/"
@@ -34,50 +34,51 @@ export function MainNav({ items }: MainNavProps) {
           {siteConfig.name}
         </span>
       </Link>
-      <NavigationMenu className="items-center justify-center">
+      <NavigationMenu className="items-center  w-full ">
         <NavigationMenuList>
           {items
-            ?.filter((item) => item.title !== items[0]?.title)
-            .map((item) =>
-              item?.items ? (
-                <NavigationMenuItem key={item.title}>
-                  <NavigationMenuTrigger className="h-auto capitalize">
-                    {item.title}
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      {item.items.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              ) : (
-                item.href && (
+            ? items.map((item) =>
+                item?.items ? (
                   <NavigationMenuItem key={item.title}>
-                    <Link href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink
-                        className={cn(navigationMenuTriggerStyle(), "h-auto")}
-                      >
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
+                    {item.items.length > 0 ? (
+                      <>
+                        <NavigationMenuTrigger className="h-auto capitalize">
+                          {item.title}
+                        </NavigationMenuTrigger>
+                      </>
+                    ) : (
+                      <Link href={`${item.href}`} legacyBehavior passHref>
+                        <NavigationMenuLink
+                          className={navigationMenuTriggerStyle()}
                         >
-                          {item.description}
-                        </ListItem>
-                      </NavigationMenuLink>
-                    </Link>
+                          {item.title}
+                        </NavigationMenuLink>
+                      </Link>
+                    )}
+
+                    {item.items.length > 0 ? (
+                      <>
+                        <NavigationMenuContent>
+                          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                            {item.items.length > 0
+                              ? item.items.map((item) => (
+                                  <ListItem
+                                    key={item.title}
+                                    title={item.title}
+                                    href={item.href}
+                                  >
+                                    {item.description}
+                                  </ListItem>
+                                ))
+                              : null}
+                          </ul>
+                        </NavigationMenuContent>
+                      </>
+                    ) : null}
                   </NavigationMenuItem>
-                )
+                ) : null
               )
-            )}
+            : null}
         </NavigationMenuList>
       </NavigationMenu>
     </div>

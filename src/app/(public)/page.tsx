@@ -2,9 +2,5 @@ import { ModeToggle } from "@/components/layouts/theme-toggle";
 import React from "react";
 
 export default function Home() {
-  return (
-    <div>
-      <ModeToggle />
-    </div>
-  );
+  return <div>Home Page</div>;
 }

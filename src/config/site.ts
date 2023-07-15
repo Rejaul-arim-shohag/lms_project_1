@@ -18,96 +18,48 @@ export const siteConfig = {
 
   mainNav: [
     {
-      title: "Lobby",
+      title: "Course",
+      href: "/course12",
+      description: "Read our latest blog posts.",
       items: [
         {
           title: "Products",
-          href: "/products",
+          href: "/course1",
           description: "All the products we have to offer.",
           items: [],
         },
         {
           title: "Build a Board",
-          href: "/build-a-board",
+          href: "/course13",
           description: "Build your own custom skateboard.",
           items: [],
         },
         {
           title: "Blog",
-          href: "/blog",
+          href: "/course12",
           description: "Read our latest blog posts.",
           items: [],
         },
       ],
     },
+
     {
-      title: "Lobby",
-      items: [
-        {
-          title: "Products",
-          href: "/products",
-          description: "All the products we have to offer.",
-          items: [],
-        },
-        {
-          title: "Build a Board",
-          href: "/build-a-board",
-          description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
-          items: [],
-        },
-      ],
+      title: "About us",
+      href: "/about",
+      description: "All the products we have to offer.",
+      items: [],
     },
     {
-      title: "Lbby",
-      items: [
-        {
-          title: "Products",
-          href: "/products",
-          description: "All the products we have to offer.",
-          items: [],
-        },
-        {
-          title: "Build a Board",
-          href: "/build-a-board",
-          description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
-          items: [],
-        },
-      ],
+      title: "Student Review",
+      href: "/reviews",
+      description: "All the products we have to offer.",
+      items: [],
     },
     {
-      title: "Lobb",
-      items: [
-        {
-          title: "Products",
-          href: "/products",
-          description: "All the products we have to offer.",
-          items: [],
-        },
-        {
-          title: "Build a Board",
-          href: "/build-a-board",
-          description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
-          items: [],
-        },
-      ],
+      title: "Instructor",
+      href: "/instructors",
+      description: "All the products we have to offer.",
+      items: [],
     },
   ] satisfies MainNavItem[],
   links,
