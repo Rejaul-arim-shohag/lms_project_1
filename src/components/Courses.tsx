@@ -38,7 +38,7 @@ export default function Courses() {
             <p className="text-center">যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যান আপনার  পছন্দের সেকশনে</p>
             <div className="container mx-auto grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {cards.map((card, index) => (
-                    <div
+                    <div 
                         className="z-40 mt-20 relative rounded-lg bg-slate-5 p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                         <div className="absolute -top-12 left-0 right-0">
                             <img className="mx-auto w-90 h-90" src={card.icon} alt="" />

@@ -1,5 +1,7 @@
 import Banner from "@/components/Banner";
 import Courses from "@/components/Courses";
+import Instructors from "@/components/instructors";
+import Reviews from "@/components/reviews";
 import React from "react";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
     <>
       <Banner />
       <Courses/>
+      <Instructors/>
+      <Reviews/>
     </>
   );
 }

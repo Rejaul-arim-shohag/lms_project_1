@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -85,6 +86,17 @@ body {
 
     --ring: 240 3.7% 15.9%;
   }
+}
+.slick-slide {
+  margin: 20px; /* Adjust the value to set the desired gap */
+}
+.slick-slider svg{
+  margin-top: -200px;
+}
+
+/* Optional: If you want to remove the margin on the last slide to avoid an extra gap */
+.slick-slide:last-child {
+  margin-right: 0;
 }
 
 @layer base {
