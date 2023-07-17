@@ -50,28 +50,59 @@ export default function Reviews() {
         "ইউআই ইউএক্স কোর্সটি স্কিল ডেভেলপমেন্টের জন্য অনেক হেল্পফুল একটি কোর্স। আমার প্রতিটি প্রবলেমই তারা লাইভ ক্লাসেই সলভ করার চেষ্টা করেছে। এছাড়াও সাপোর্ট ইন্সট্রাক্টররাও অনেক ভালো। এসব কারণেই ইউআই ইউএক্স এর লার্নিং জার্নিটা আমার জন্য ছিল অসাধারণ।",
     },
   ];
-  var settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
+  const settings = {
+    centerMode: true,
+    centerPadding: "10px",
     slidesToShow: 3,
+    speed: 500,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+
+    arrows: true,
+    dots: false,
     prevArrow: <FcPrevious />,
     nextArrow: <FcNext />,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="reviewSection py-20 bg-no-repeat  bg-cover bg-[url('/images/review_bg_image.png')]">
+    <div className=" py-20 bg-no-repeat  bg-cover bg-[url('/images/review_bg_image.png')]">
       <div className="text-center container">
-        <h1 className="text-4xl font-semibold mb-8">আমাদের সাকসেস স্টুডেন্টদের রিভিউস</h1>
-        <p className="text-xl my-4 ">কোর্স করার পর আমাদের স্টুডেন্টদের অনুভূতি শেয়ার করে</p>
+        <h1 className="text-4xl font-semibold mb-8">
+          আমাদের সাকসেস স্টুডেন্টদের রিভিউস
+        </h1>
+        <p className="text-xl my-4 ">
+          কোর্স করার পর আমাদের স্টুডেন্টদের অনুভূতি শেয়ার করে
+        </p>
       </div>
 
-      <div className="container mx-auto py-5 my-5 py-5">
+      <div className="container mx-auto py-5 my-5">
         <Slider {...settings}>
           {reviewers.map((item, index) => (
-            <div className=" border-2 p-4 px-6 bg-background rounded-2xl" key={index}>
+            <div
+              className=" border-2 p-4 px-6 bg-background rounded-2xl "
+              key={index}
+            >
               <div className="flex items-center mt-2.5 mb-5">
                 <svg
                   className="w-6 h-6 text-yellow-300 mr-1"
@@ -122,19 +153,29 @@ export default function Reviews() {
               </div>
               <div>
                 <p className="text-lg">
-                  ইউআই ইউএক্স কোর্সটি স্কিল ডেভেলপমেন্টের জন্য অনেক হেল্পফুল একটি কোর্স। আমার প্রতিটি প্রবলেমই তারা লাইভ ক্লাসেই সলভ করার
-                  চেষ্টা করেছে। এছাড়াও সাপোর্ট ইন্সট্রাক্টররাও অনেক ভালো। এসব কারণেই ইউআই ইউএক্স এর লার্নিং জার্নিটা আমার জন্য ছিল অসাধারণ।
+                  ইউআই ইউএক্স কোর্সটি স্কিল ডেভেলপমেন্টের জন্য অনেক হেল্পফুল
+                  একটি কোর্স। আমার প্রতিটি প্রবলেমই তারা লাইভ ক্লাসেই সলভ করার
+                  চেষ্টা করেছে। এছাড়াও সাপোর্ট ইন্সট্রাক্টররাও অনেক ভালো। এসব
+                  কারণেই ইউআই ইউএক্স এর লার্নিং জার্নিটা আমার জন্য ছিল অসাধারণ।
                 </p>
               </div>
 
               <div className="py-3 sm:py-4">
                 <div className="flex items-center space-x-4">
                   <div className="flex-shrink-0">
-                    <img className="w-20 h-20 rounded-full" src="/images/Rectangle25.png" alt="Neil image" />
+                    <img
+                      className="w-20 h-20 rounded-full"
+                      src="/images/Rectangle25.png"
+                      alt="Neil image"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-lg font-medium text-gray-900 truncate dark:text-white">Neil Sims</p>
-                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">email@windster.com</p>
+                    <p className="text-lg font-medium text-gray-900 truncate dark:text-white">
+                      Neil Sims
+                    </p>
+                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                      email@windster.com
+                    </p>
                   </div>
                   <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                     <img src="/images/vector.png" alt="" />
