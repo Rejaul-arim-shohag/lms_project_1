@@ -98,7 +98,12 @@ body {
 .slick-slide:last-child {
   margin-right: 0;
 }
-
+.ContactSection{
+  background-color: #7F4DCA;
+}
+.reviewSection {
+  height: 600px
+}
 @layer base {
   * {
     @apply border-border;
