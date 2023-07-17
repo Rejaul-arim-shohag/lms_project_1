@@ -23,7 +23,7 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="hidden gap-10  lg:flex w-full ">
+    <div className="hidden gap-10  lg:flex w-full z-50">
       <Link
         aria-label="Home"
         href="/"

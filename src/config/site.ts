@@ -65,106 +65,66 @@ export const siteConfig = {
   links,
   footerNav: [
     {
-      title: "Credits",
+      title: "কুইক লিংক",
       items: [
         {
-          title: "OneStopShop",
-          href: "https://onestopshop.jackblatch.com",
-          external: true,
+          title: "আপকামিং লাইভ ব্যাচ",
+          href: "/",
+          external: false,
         },
         {
-          title: "Acme Corp",
-          href: "https://acme-corp.jumr.dev",
-          external: true,
+          title: "লাইভ ক্লাস",
+          href: "/",
+          external: false,
         },
         {
-          title: "craft.mxkaske.dev",
-          href: "https://craft.mxkaske.dev",
-          external: true,
-        },
-        {
-          title: "Taxonomy",
-          href: "https://tx.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "shadcn/ui",
-          href: "https://ui.shadcn.com",
-          external: true,
+          title: "আপকামিং লাইভ ব্যাচ",
+          href: "/",
+          external: false,
         },
       ],
     },
     {
-      title: "Help",
+      title: "কোম্পানি",
       items: [
         {
-          title: "About",
+          title: "আমাদের সম্পর্কে",
           href: "/about",
           external: false,
         },
         {
-          title: "Contact",
+          title: "রিফান্ড পলিসি",
           href: "/contact",
           external: false,
         },
         {
-          title: "Terms",
+          title: "প্রাইভেসী পলিসি",
           href: "/terms",
           external: false,
         },
         {
-          title: "Privacy",
+          title: "টার্মস এবং শর্তাবলী",
           href: "/privacy",
           external: false,
         },
       ],
     },
     {
-      title: "Social",
+      title: "টার্মস এবং শর্তাবলী",
       items: [
         {
-          title: "Twitter",
+          title: "Phone: 01798 - 84753",
           href: links.twitter,
           external: true,
         },
         {
-          title: "GitHub",
+          title: "Email: ecoacademy@gmail.com",
           href: links.githubAccount,
           external: true,
         },
         {
-          title: "Discord",
+          title: "Location: Tangail, Dhaka, Bangladesh",
           href: links.discord,
-          external: true,
-        },
-        {
-          title: "cal.com",
-          href: links.calDotCom,
-          external: true,
-        },
-      ],
-    },
-    {
-      title: "Lofi",
-      items: [
-        {
-          title: "beats to study to",
-          href: "https://www.youtube.com/watch?v=jfKfPfyJRdk",
-          external: true,
-        },
-        {
-          title: "beats to chill to",
-          href: "https://www.youtube.com/watch?v=rUxyKA_-grg",
-          external: true,
-        },
-        {
-          title: "a fresh start",
-          href: "https://www.youtube.com/watch?v=rwionZbOryo",
-          external: true,
-        },
-        {
-          title: "coffee to go",
-          href: "https://www.youtube.com/watch?v=2gliGzb2_1I",
           external: true,
         },
       ],

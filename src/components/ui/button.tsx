@@ -9,7 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-theme text-theme-foreground hover:opacity-90 rounded-full",
+        default:
+          "bg-theme  text-theme-foreground hover:opacity-90 rounded-full",
         rounded:
           "bg-theme  rounded-3xl  text-theme-foreground hover:scale-105 px-5",
         destructive:
@@ -24,7 +25,7 @@ const buttonVariants = cva(
           "hover:bg-theme rounded-full text-theme-foreground border border-theme border-2",
       },
       size: {
-        default: "h-10 px-4 py-2",
+        default: "h-15 px-5 py-3",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",

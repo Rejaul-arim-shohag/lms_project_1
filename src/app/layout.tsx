@@ -2,7 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
-import { fontMono, fontSans } from "@/lib/fonts";
+import { Banglafont, fontMono, fontSans } from "@/lib/fonts";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,9 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-          fontMono.variable
+          "min-h-screen bg-background antialiased font-bangla",
+          Banglafont.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
