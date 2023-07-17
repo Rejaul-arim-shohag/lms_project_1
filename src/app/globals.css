@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -90,7 +89,7 @@ body {
 .slick-slide {
   margin: 20px; /* Adjust the value to set the desired gap */
 }
-.slick-slider svg{
+.slick-slider svg {
   margin-top: -200px;
 }
 
@@ -98,11 +97,11 @@ body {
 .slick-slide:last-child {
   margin-right: 0;
 }
-.ContactSection{
-  background-color: #7F4DCA;
+.ContactSection {
+  background-color: #7f4dca;
 }
 .reviewSection {
-  height: 600px
+  height: 700px;
 }
 @layer base {
   * {
