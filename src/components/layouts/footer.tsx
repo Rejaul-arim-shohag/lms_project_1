@@ -10,7 +10,7 @@ import { Shell } from "@/components/shells/shell";
 
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t bg-[#211440] bg-[url('/images/backd.png')] bg-cover inset-0 bg-center ">
+    <footer className="w-full border-t bg-[#211440] bg-[url('/images/backd.png')] bg-cover bg-center ">
       <Shell as="div">
         <section
           id="footer-content"
