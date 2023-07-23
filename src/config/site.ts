@@ -44,20 +44,20 @@ export const siteConfig = {
     },
 
     {
-      title: "About us",
-      href: "/about",
+      title: "Batch",
+      href: "/batch",
       description: "All the products we have to offer.",
       items: [],
     },
     {
-      title: "Student Review",
-      href: "/reviews",
+      title: "Course",
+      href: "/course",
       description: "All the products we have to offer.",
       items: [],
     },
     {
       title: "Instructor",
-      href: "/instructors",
+      href: "/course/2",
       description: "All the products we have to offer.",
       items: [],
     },
